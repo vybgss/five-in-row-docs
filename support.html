@@ -3,128 +3,373 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Five in Row - Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Five in Row – Support</title>
+  <meta name="description" content="Help for Five in Row – Neon Gomoku: rules, game modes, undo and hints, free games and Premium, subscriptions, and how to contact support." />
+  <meta name="theme-color" content="#0a071e" />
+  <meta name="apple-itunes-app" content="app-id=6756918078" />
+  <link rel="canonical" href="https://vybgss.github.io/five-in-row-docs/support.html" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Five in Row" />
+  <meta property="og:title" content="Five in Row – Support" />
+  <meta property="og:description" content="Answers to common questions and how to get help with Five in Row – Neon Gomoku." />
+  <meta property="og:url" content="https://vybgss.github.io/five-in-row-docs/support.html" />
+  <meta property="og:image" content="https://vybgss.github.io/five-in-row-docs/assets/og-image.jpg" />
+  <link rel="stylesheet" href="assets/site.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 40px;
-      line-height: 1.6;
-      color: #333;
+    .jump {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 26px;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 50px;
-      color: #F05138;
+    .jump a {
+      color: var(--text-dim);
     }
 
-    h2 {
-      color: #333;
-      margin-top: 40px;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: #F05138;
+    .jump a:hover {
+      color: var(--text);
       text-decoration: none;
+      border-color: rgba(61, 204, 255, 0.6);
     }
 
-    a:hover {
-      text-decoration: underline;
+    .faq-group > h2 .icon-chip {
+      width: 40px;
+      height: 40px;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .faq-group > h2 .icon {
+      width: 19px;
+      height: 19px;
     }
 
-    ul li {
-      background: #f9f9f9;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-left: 4px solid #F05138;
+    .contact-top {
+      margin-bottom: 52px;
     }
 
-    .top-text {
-      font-style: italic;
-      margin-bottom: 50px;
+    .tip {
+      margin-top: 8px !important;
+      font-size: 14.5px;
+      color: var(--text-faint);
     }
   </style>
 </head>
 
 <body>
-  <h1>Five in Row - Support</h1>
+  <div class="backdrop" aria-hidden="true"></div>
 
-  <p class="top-text">
-    Need help with Five in Row or have questions about the game rules? You're in the right place.
-    Below, you'll find answers to frequently asked questions and ways to contact us for further assistance.
-    We're here to ensure you have the best Gomoku experience.
-  </p>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-classic" viewBox="0 0 24 24"><circle cx="5" cy="5" r="2.3"/><circle cx="12" cy="5" r="2.3"/><circle cx="19" cy="5" r="2.3"/><circle cx="5" cy="12" r="2.3"/><circle cx="12" cy="12" r="2.3"/><circle cx="19" cy="12" r="2.3"/><circle cx="5" cy="19" r="2.3"/><circle cx="12" cy="19" r="2.3"/><circle cx="19" cy="19" r="2.3"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="M2.8 7.2 7.6 11 12 4.2l4.4 6.8 4.8-3.8-1.9 10.3H4.7zM4.8 19.4h14.4V21H4.8z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M21.2 6.6a5.2 5.2 0 0 1-6.9 5L6.8 19.1a2.1 2.1 0 0 1-3-3l7.5-7.5a5.2 5.2 0 0 1 6.3-6.6l-3.2 3.2.7 2.9 2.9.7z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5.5 4h13A2.5 2.5 0 0 1 21 6.5v11a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5v-11A2.5 2.5 0 0 1 5.5 4zm.4 2.4 6.1 4.9 6.1-4.9z"/></symbol>
+  </svg>
 
-  <h2>Frequently Asked Questions (FAQ)</h2>
-  <ul>
-    <li>
-      <strong>1. How is the game played?</strong><br />
-      Five in Row (Gomoku) is played on a 15x15 grid. The goal is to be the first to connect 5 of your pieces in a row,
-      either horizontally, vertically, or diagonally.
-    </li>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <li>
-      <strong>2. What difficulty levels are available?</strong><br />
-      The game offers three difficulty levels:
-      <ul>
-        <li><strong>Easy:</strong> Perfect for beginners.</li>
-        <li><strong>Medium:</strong> A fair challenge for intermediate players.</li>
-        <li><strong>Hard:</strong> Expert-level AI that punishes mistakes.</li>
-      </ul>
-    </li>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="marketing.html">
+        <img src="assets/icon.png" width="32" height="32" alt="" />
+        <span>Five in Row</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="marketing.html">Home</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy-policy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-    <li>
-      <strong>3. How does the game economy work?</strong><br />
-      The game features a daily limit of 10 free games, which resets every day. You can remove this limit and enjoy
-      unlimited play by purchasing a Premium subscription.
-    </li>
+  <main id="main" class="container narrow">
 
-    <li>
-      <strong>4. What are the system requirements?</strong><br />
-      Five in Row requires an iOS device running iOS 17.6 or later.
-    </li>
+    <div class="page-head">
+      <span class="eyebrow">Help center</span>
+      <h1><span class="gradient-text">Support</span></h1>
+      <div class="five" aria-hidden="true"><span class="stone"></span><span class="stone"></span><span class="stone"></span><span class="stone"></span><span class="stone"></span></div>
+      <p class="lead">
+        Need help with Five in Row or have a question about the rules? Find quick answers below,
+        or write to us – we're happy to help.
+      </p>
+      <nav class="jump" aria-label="Topics">
+        <a class="pill" href="#playing">Playing the game</a>
+        <a class="pill" href="#premium">Free games &amp; Premium</a>
+        <a class="pill" href="#troubleshooting">Data &amp; troubleshooting</a>
+        <a class="pill" href="#contact">Contact</a>
+      </nav>
+    </div>
 
-    <li>
-      <strong>5. Does the game require an internet connection?</strong><br />
-      No. Five in Row works completely offline for the core gameplay. However, an internet connection is required
-      to restore purchases or validate your Premium subscription.
-    </li>
+    <!-- Playing the game -->
+    <section class="faq-group" id="playing" aria-labelledby="playing-title">
+      <h2 id="playing-title">
+        <span class="icon-chip tint-cyan"><svg class="icon" aria-hidden="true"><use href="#i-classic" /></svg></span>
+        Playing the game
+      </h2>
 
-    <li>
-      <strong>6. How do I manage or cancel my subscription?</strong><br />
-      Subscriptions are managed directly through your Apple ID. Go to your device's <strong>Settings > [Your Name] >
-        Subscriptions</strong>
-      to view, cancel, or change your subscription plan.
-    </li>
-  </ul>
+      <details class="glass faq">
+        <summary>How do I play?</summary>
+        <div class="answer">
+          <p>
+            Five in Row (Gomoku) is played on a 15 × 15 board. Players take turns placing one stone at a time.
+            The first to line up <strong>five or more stones in an unbroken row</strong> – horizontally, vertically
+            or diagonally – wins. If the board fills up and nobody has five in a row, the game is a draw.
+          </p>
+          <p>You play the cyan stones, your opponent plays pink.</p>
+        </div>
+      </details>
 
-  <h2>Contact Support</h2>
-  <p>
-    If you didn't find the answer you're looking for, or if you need further assistance, feel free to reach out to us.
-    We'll get back to you as soon as possible.
-  </p>
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:volodymyr.sichka@gmail.com">volodymyr.sichka@gmail.com</a>
-  </p>
+      <details class="glass faq">
+        <summary>How do I place a stone?</summary>
+        <div class="answer">
+          <p>
+            Touch the board and drag to aim – a crosshair shows exactly where your stone will land. Lift your
+            finger to place it. Changed your mind? Slide your finger off the board before lifting and nothing is placed.
+          </p>
+        </div>
+      </details>
 
-  <h2>Feedback</h2>
-  <p>
-    We value your feedback! If you have suggestions, improvements, or feature requests, please send them to the email
-    above. Your input helps us make Five in Row better for everyone.
-  </p>
+      <details class="glass faq">
+        <summary>What are Classic, Blitz and Chaos?</summary>
+        <div class="answer">
+          <ul>
+            <li><strong>Classic</strong> – pure Gomoku on a 15 × 15 board. No clock, no tricks.</li>
+            <li><strong>Blitz</strong> – 10 seconds per move. The clock starts after the first stone is placed;
+              if your time runs out, you lose. Undo and hints are not available in Blitz.</li>
+            <li><strong>Chaos</strong> – random blocked cells reshape the board every game. Nobody can place a
+              stone on a blocked cell, so plan your lines around them.</li>
+          </ul>
+          <p>Choose the mode on the <span class="path">New Game</span> screen after tapping <span class="path">Play</span>.</p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>Which opponents can I play against?</summary>
+        <div class="answer">
+          <ul>
+            <li><strong>Easy</strong> – relaxed games that forgive your mistakes.</li>
+            <li><strong>Medium</strong> – solid defence that spots most of your threats.</li>
+            <li><strong>Hard</strong> – thinks many moves ahead. Bring your best game.</li>
+            <li><strong>2 Players</strong> – pass the device and play a friend face to face.</li>
+          </ul>
+          <p>Under <span class="path">First Move</span> you decide who starts: you, your opponent or random.</p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>What do the tactical alerts mean?</summary>
+        <div class="answer">
+          <p>During a game, call-outs highlight important patterns on the board:</p>
+          <ul>
+            <li><strong>Open three</strong> – three in a row with both ends open. Left alone, it can grow into an open four.</li>
+            <li><strong>Four</strong> and <strong>open four</strong> – one move away from five. An open four has both ends free and can't be stopped.</li>
+            <li><strong>Double three</strong> and <strong>four + three</strong> – two threats made with a single stone; the opponent can only block one.</li>
+            <li><strong>Block the four</strong> and <strong>Danger</strong> – warnings that your opponent is threatening to win.</li>
+          </ul>
+          <p>Call-outs ending in "!!" mark shapes that win by force unless they are answered correctly.</p>
+          <p>Prefer to read the board yourself? Turn them off in <span class="path">Settings → Tactical Alerts</span>.</p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>How do undo and hints work?</summary>
+        <div class="answer">
+          <ul>
+            <li>Against the AI you get <strong>3 undos and 3 hints per game</strong>. With Premium they are unlimited.</li>
+            <li>In 2-player games undo is unlimited and hints are not available.</li>
+            <li>Blitz games have no undo or hints.</li>
+          </ul>
+          <p>Note: the <strong>Purist</strong> achievement requires beating the Hard AI without using undo or hints.</p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>How do XP, ranks and achievements work?</summary>
+        <div class="answer">
+          <p>
+            Every finished game against the AI earns XP. Wins are worth the most and grow with the difficulty,
+            with bonuses for Blitz and Chaos, quick finishes and win streaks. Draws and losses still earn a little.
+          </p>
+          <p>
+            As you level up you climb the ranks: Novice, Apprentice, Tactician, Strategist, Expert, Master,
+            Grandmaster and Legend. There are 9 achievements to unlock. Open <span class="path">Profile</span> from
+            the main menu to see your level, win rate, best streak, record against each AI level and achievements.
+          </p>
+          <p>2-player games are just for fun and don't affect XP or statistics.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Free games & Premium -->
+    <section class="faq-group" id="premium" aria-labelledby="premium-title">
+      <h2 id="premium-title">
+        <span class="icon-chip tint-gold"><svg class="icon" aria-hidden="true"><use href="#i-crown" /></svg></span>
+        Free games &amp; Premium
+      </h2>
+
+      <details class="glass faq">
+        <summary>How many games can I play for free?</summary>
+        <div class="answer">
+          <p>
+            You can start up to <strong>10 games per day</strong> for free. A game counts when it starts – including
+            <span class="path">Play Again</span> and 2-player games. The counter resets at midnight, your device's local time.
+            The dots under the main menu show how many free games are left today.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>What does Premium include?</summary>
+        <div class="answer">
+          <ul>
+            <li>Unlimited games every day – no daily limit.</li>
+            <li>Unlimited undos and hints in every game against the AI.</li>
+          </ul>
+          <p>
+            Premium is an optional auto-renewing monthly subscription. The price is shown in the app in your local currency
+            before you confirm the purchase, and payment is charged to your Apple Account.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>How do I subscribe or restore my purchase?</summary>
+        <div class="answer">
+          <p>
+            Tap <span class="path">Premium</span> on the main menu (or <span class="path">Settings → Premium</span>), then
+            <span class="path">Subscribe</span>. If you already subscribed – for example on another device or after
+            reinstalling the app – tap <span class="path">Restore Purchases</span> on the same screen. Make sure you are
+            signed in with the same Apple Account you used to subscribe.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>How do I manage or cancel my subscription?</summary>
+        <div class="answer">
+          <p>
+            Subscriptions are managed by Apple. On your iPhone or iPad open
+            <span class="path">Settings → [your name] → Subscriptions</span>, or open the App Store, tap your account
+            picture and choose <span class="path">Subscriptions</span>.
+          </p>
+          <p>
+            To avoid being charged for the next period, cancel at least 24 hours before the current period ends.
+            Premium stays active until the end of the period you've already paid for.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>Can I get a refund?</summary>
+        <div class="answer">
+          <p>
+            All payments are processed by Apple, so refunds are handled by Apple too. You can request one at
+            <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>The Premium screen says "Store unavailable"</summary>
+        <div class="answer">
+          <p>
+            The app couldn't reach the App Store. Check your internet connection, make sure you're signed in to the
+            App Store and that in-app purchases are allowed in <span class="path">Settings → Screen Time</span>, then try again.
+          </p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Data & troubleshooting -->
+    <section class="faq-group" id="troubleshooting" aria-labelledby="troubleshooting-title">
+      <h2 id="troubleshooting-title">
+        <span class="icon-chip tint-violet"><svg class="icon" aria-hidden="true"><use href="#i-wrench" /></svg></span>
+        Data &amp; troubleshooting
+      </h2>
+
+      <details class="glass faq">
+        <summary>Where is my progress saved? Will it move to a new device?</summary>
+        <div class="answer">
+          <p>
+            Your level, XP, achievements, statistics and settings are stored only on your device – there is no account
+            and nothing is uploaded. Progress is not synced between devices, but it is included in your device backups
+            (iCloud or computer), so restoring a backup brings it back.
+          </p>
+          <p>
+            Deleting the app erases your progress. A Premium subscription is never lost: use
+            <span class="path">Restore Purchases</span> after reinstalling.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>I can't hear any sound</summary>
+        <div class="answer">
+          <p>
+            Check that <span class="path">Settings → Sound Effects</span> is on in the app. Five in Row respects the
+            Ring/Silent switch, so sounds are muted while your device is in Silent mode. It also plays alongside your
+            music instead of stopping it.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>I don't feel any haptics</summary>
+        <div class="answer">
+          <p>
+            Make sure <span class="path">Settings → Haptics</span> is on in the app and that System Haptics is enabled in
+            <span class="path">iOS Settings → Sounds &amp; Haptics</span>. iPad models don't have haptic feedback.
+          </p>
+        </div>
+      </details>
+
+      <details class="glass faq">
+        <summary>What do I need to play?</summary>
+        <div class="answer">
+          <ul>
+            <li>An iPhone or iPad with iOS / iPadOS 17.0 or later.</li>
+            <li>No internet connection for playing – the game works fully offline. You only need to be online to
+              subscribe, restore purchases or refresh your subscription status.</li>
+            <li>The app is available in English.</li>
+          </ul>
+        </div>
+      </details>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card contact" style="margin-top: 56px;" aria-labelledby="contact-title">
+      <div>
+        <h2 id="contact-title">Still need help?</h2>
+        <p>
+          Write to us and we'll get back to you as soon as possible. Suggestions and feature requests are very welcome too –
+          your feedback helps make Five in Row better for everyone.
+        </p>
+        <p class="tip">
+          Tip: include the app version (shown at the bottom of <span class="path">Settings</span>), your device model and iOS version.
+        </p>
+      </div>
+      <a class="btn btn-primary" href="mailto:volodymyr.sichka@gmail.com?subject=Five%20in%20Row%20support">
+        <svg class="icon" aria-hidden="true"><use href="#i-mail" /></svg>
+        volodymyr.sichka@gmail.com
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container narrow">
+      <span>© 2025–2026 Volodymyr Sichka</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="marketing.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+        <a href="https://apps.apple.com/app/id6756918078">App Store</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 
 </html>
